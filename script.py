@@ -24,11 +24,25 @@ def get_image(source_dir):
         else:
             print("There are {} .tif files in the folder".format(len(images)))
 
-        imge_ID = source_dir + '_' + i
+        image_ID = source_dir + '_' + i
         IDs.append(image_ID)
+        
+        return images
         yield IDs
 
-def im2npy(source_dir,save_to,image_extension):
+def tif2array(source_dir,save_to):
 
-    IDs = get_image_ID_generator(source_dir = source_dir, extension = image_extension)
+    IDs = get_image(source_dir)
     iter_IDs = iter(IDs)
+
+    for i,image in enumerate(images):
+
+        image = tifffile.imread(image)
+        ID = next(iter_IDs)
+        array_img = np.asarray(image)
+
+        np.save(save_to + '\\np-' + ID[-1] + '.npy', np_img)
+
+    print("Process Ended. {} numpy arrays are created in total.".format(i + 1))
+
+tif2array(source_dir, save_to)
