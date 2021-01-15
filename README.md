@@ -1,8 +1,6 @@
-# RS_Personal
-
 # GEO468E Special Topics in Remote Sensing
-## Bihter Tandoğdu 010170642
-This repository contains all wanted documentation and codes for Special Topics in Remote Sensing course. 
+## Bihter Tandoğdu - 010170642
+### This repository contains all wanted documentation and codes for Special Topics in Remote Sensing course. 
 
 - The video ["Yeni Başlayanlar İçin 90 Dakikada Git"](https://www.youtube.com/watch?v=SX8bHqXt8ws&t=4777s&ab_channel=ArinYazilim) was first watched to understand the logic of the Github site and Git.
 - Then I watched the ["Yeni Başlayanlar İçin 80 Dakikada GitHub"](https://www.youtube.com/watch?v=ihoPT325jyk&t=2310s&ab_channel=ArinYazilim) video promoting Github using git.
@@ -11,6 +9,8 @@ This repository contains all wanted documentation and codes for Special Topics i
 - This library is based on the Google Earth Engine codes described in the 11th week lecture. That's why I downloaded the geemap library along with the gee library in my code.
 - [The Google Earth Engine site](https://developers.google.com/earth-engine/guides), which has been mentioned and used a lot in the video series, was a resource for me. I found the python codes from the site with mostly java codes and expanded my knowledge by following these codes myself.
 
+
+The code I wrote does not contain an image input, it takes the images from Google Earth Engine.
 
 In my codes, I set the map center to the Karaburun Peninsula in Izmir, the location I chose and whose temporal resolution I wanted to observe.But I completely left the user to adjust the size of the satellite image, as well as the size of the images to create the gif.
 
